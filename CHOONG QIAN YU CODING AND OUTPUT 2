@@ -1,0 +1,398 @@
+CODING:
+package assignment2;
+
+import java.util.Scanner;
+
+public class Assignment2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		
+		//initialize
+		int join,age,payment;
+		String name,ic,num,gender="female";
+		int a,a1,b,b1,c,c1,d,d1,total,cash,online;
+		
+		System.out.println("National Cancer Society Malaysia (NCSM) had organized a campaign recently");
+		System.out.println("");
+		
+		System.out.println("This campaign is to raise public awareness on the prevention, screening and early detection of cancer through education and raising funds for the patients.");
+		
+		System.out.println("MINI salon had organized this hair donation event to support the campaign organized by NCSM and to help patients that are suffering from cancer!"); 
+		System.out.println("");
+		
+		System.out.println("The public is welcome to take part in this event to show us your support!");
+		System.out.println("");
+		
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		
+		System.out.println("If you are interested to join, please enter 1.");
+		System.out.println("If you are not interested, please enter 2");
+		
+		System.out.println("Are you interested to join? ");
+		join = sc.nextInt();
+		if(join<=1) 
+		{
+			System.out.println("Thanks for your support!");
+			System.out.println("");
+			
+			System.out.println("For the public who wish to join, the fees collected will be: ");
+		
+			System.out.println("Female : RM10");
+			System.out.println("Male   : RM7 ");
+			System.out.println("Kids   : RM5 ");
+			System.out.println("");
+		
+			System.out.println("For every participant, the organizer, the MINI salon will donate an extra RM5 to NCSM.");
+			System.out.println("");
+		
+			System.out.println("The total fees collected and extra donation will all give to NCSM to help the patient in need along with the donated hair.");
+			System.out.println("");
+		
+			System.out.println("For those who are interested to join, you are required to enter your details.");
+			System.out.println("");
+		
+			System.out.println("Please enter your name:");
+			sc.nextLine();
+			name=sc.nextLine();
+			
+			System.out.println("Please enter your NRIC:");
+			ic=sc.nextLine();
+			
+			System.out.println("Please enter your contact number:");
+			num=sc.next();
+			
+			System.out.println("Please enter your age:");
+			age=sc.nextInt();
+			
+			System.out.println("Please enter your gender:");
+			gender=sc.next();
+			System.out.println("");
+			
+			System.out.println("*******************************************");
+			System.out.println("            PERSONAL DETAILS               ");
+			System.out.println("Name		: "+name);
+			System.out.println("NRIC		: "+ic);
+			System.out.println("Contact number	: "+num);
+			System.out.println("Age		: "+age);
+			System.out.println("Gender		: "+gender);
+			System.out.println("");
+			System.out.println("*******************************************");
+			System.out.println("");
+		
+		if (gender.equals("female")) {
+			if(age<=12) {
+				System.out.println("Hi," + name +". Your fees is RM 5");
+				System.out.println("");
+		
+				System.out.println("Please enter your preferable payment method:");
+				System.out.println("If you wish to pay with cash, please enter 1.");
+				System.out.println("If you wish to pay through online transfer, please enter 2.");
+		
+				payment = sc.nextInt();
+				if (payment == 1)
+				{
+					System.out.println("Please move to the cashier that is beside the entrance to complete your payment!"); 
+
+				}
+		
+				else
+				{
+					System.out.println("");
+					System.out.println("The details of the receiver bank account are as below:");
+					System.out.println("Maybank");
+					System.out.println("MINI salon");
+					System.out.println("173678460739");
+					System.out.println("Please type on the reference with \"Hair Donation\"");
+					
+				}
+			}
+			else
+				System.out.println("Hi, Miss/Mrs " + name +". Your fees is RM 10");
+			System.out.println();
+	
+			System.out.println("Please enter your preferable payment method:");
+			System.out.println("If you wish to pay with cash, please enter 1.");
+			System.out.println("If you wish to pay through online transfer, please enter 2.");
+	
+			payment = sc.nextInt();
+			if (payment == 1)
+			{
+				System.out.println("Please move to the cashier that is beside the entrance to complete your payment!"); 
+
+			}
+	
+			else
+			{
+				System.out.println("");
+				System.out.println("The details of the receiver bank account are as below:");
+				System.out.println("Maybank");
+				System.out.println("MINI salon");
+				System.out.println("173678460739");
+				System.out.println("Please type on the reference with \"Hair Donation\"");
+				
+			}
+		}
+		
+		else {
+			if(age<=12) {
+				System.out.println("Hi," + name +". Your fees is RM 5");
+				System.out.println();
+		
+				System.out.println("Please enter your preferable payment method:");
+				System.out.println("If you wish to pay with cash, please enter 1.");
+				System.out.println("If you wish to pay through online transfer, please enter 2.");
+		
+				payment = sc.nextInt();
+				if (payment == 1)
+				{
+					System.out.println("Please move to the cashier that is beside the entrance to complete your payment!"); 
+
+				}
+		
+				else
+				{
+					System.out.println("");
+					System.out.println("The details of the receiver bank account are as below:");
+					System.out.println("Maybank");
+					System.out.println("MINI salon");
+					System.out.println("173678460739");
+					System.out.println("Please type on the reference with \"Hair Donation\"");
+					
+				}
+			}
+			else
+				System.out.println("Hi, Mr " + name +". Your fees is RM 7");
+			System.out.println();
+	
+			System.out.println("Please enter your preferable payment method:");
+			System.out.println("If you wish to pay with cash, please enter 1.");
+			System.out.println("If you wish to pay through online transfer, please enter 2.");
+	
+			payment = sc.nextInt();
+			if (payment == 1)
+			{
+				System.out.println("Please move to the cashier that is beside the entrance to complete your payment!"); 
+
+			}
+	
+			else
+			{
+				System.out.println("");
+				System.out.println("The details of the receiver bank account are as below:");
+				System.out.println("Maybank");
+				System.out.println("MINI salon");
+				System.out.println("173678460739");
+				System.out.println("Please type on the reference with \"Hair Donation\"");
+				
+			}
+		}
+		
+		//looping for available seat
+		System.out.println("");
+		System.out.println("**********************************************************************************************************************************************");
+		System.out.println("**************************************************************SEAT ALLOCATION*****************************************************************");
+		System.out.println("**********************************************************************************************************************************************");
+		
+		for(int i=8; i>=0; i--) 
+		{
+			
+			if(i<=8 && i>0) {
+				System.out.println("Your seat is available!");
+				System.out.println("Please move to seat "+i);
+				System.out.println("");
+			}
+			else
+				System.out.println("Sorry to inform you that the seats are currently full, please be patient and wait for a while!"+"\nThanks for your understanding and sorry for the inconvenience caused!");
+			
+		}
+		
+		//calculation
+		System.out.println("");
+		System.out.println("==========================================CALCULATION===========================================================");
+		System.out.println("----------------------------------------------------------------------------------------------------------------");
+		System.out.println("How many female took part in this donation: ");
+		 a=sc.nextInt();
+		 a1 = a*10;
+		 	for(int j=0; j>=0;)
+		 	{
+		 		System.out.println("There's a total of " + a + " female participant took part." );
+		 		System.out.println("The total fees collected : RM " + a1 );
+		 		break;
+		 	}
+		
+		System.out.println("----------------------------------------------------------------------------------------------------------------");
+		System.out.println("How many male took part in this donation: ");
+		 b=sc.nextInt();
+		 b1 = b*7;
+		 	for(int k=0; k>=0;) 
+		 	{
+				System.out.println("There's a total of " + b + " male participant took part." );
+				System.out.println("The total fees collected : RM " + b1 );
+				break;
+			}
+		 
+		 System.out.println("---------------------------------------------------------------------------------------------------------------");
+		 System.out.println("How many kids took part in this donation: ");
+		 c=sc.nextInt();
+		 c1 = c*5;
+		 	for(int l=0; l>=0;) 
+		 	{
+				System.out.println("There's a total of " + c + " kids participant took part." );
+				System.out.println("The total fees collected : RM " + c1 );
+				break;
+			}
+		 
+		 System.out.println("---------------------------------------------------------------------------------------------------------------");
+		
+		 d = a + b + c;
+		 d1 = d*5;
+		 System.out.println("There's a total of " + d + " participant.");
+		 System.out.println("Extra donations from MINI salon : RM "+d1);
+		 System.out.println("----------------------------------------------------------------------------------------------------------------");
+		 
+		 total = a1 + b1 + c1 + d1;
+		 System.out.println("The total donations collected is RM " +total); 
+		 
+		 System.out.println("How many cash payment is collected?");
+		 cash = sc.nextInt();
+		 
+		 System.out.println("How many online transfer payment is collected?");
+		 online = sc.nextInt();
+		 
+		 System.out.println("From the total amount of money,");
+		 System.out.println("-RM "+cash+" are paid by cash \n-RM "+ online + " are paid through online payment.");
+		 
+		 System.out.println("=============================================END==============================================================");
+		}
+		 else
+			{
+				System.out.println("Thanks for your concern, hope to see you again next time!");
+			}
+		 sc.close();
+		
+	}
+
+}
+
+OUTPUT:
+National Cancer Society Malaysia (NCSM) had organized a campaign recently
+
+This campaign is to raise public awareness on the prevention, screening and early detection of cancer through education and raising funds for the patients.
+MINI salon had organized this hair donation event to support the campaign organized by NCSM and to help patients that are suffering from cancer!
+
+The public is welcome to take part in this event to show us your support!
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If you are interested to join, please enter 1.
+If you are not interested, please enter 2
+Are you interested to join? 
+1
+Thanks for your support!
+
+For the public who wish to join, the fees collected will be: 
+Female : RM10
+Male   : RM7 
+Kids   : RM5 
+
+For every participant, the organizer, the MINI salon will donate an extra RM5 to NCSM.
+
+The total fees collected and extra donation will all give to NCSM to help the patient in need along with the donated hair.
+
+For those who are interested to join, you are required to enter your details.
+
+Please enter your name:
+Choong Qian Yu
+Please enter your NRIC:
+010517-08-0274
+Please enter your contact number:
+012-3456789
+Please enter your age:
+21
+Please enter your gender:
+female
+
+*******************************************
+            PERSONAL DETAILS               
+Name		: Choong Qian Yu
+NRIC		: 010517-08-0274
+Contact number	: 012-3456789
+Age		: 21
+Gender		: female
+
+*******************************************
+
+Hi, Miss/Mrs Choong Qian Yu. Your fees is RM 10
+
+Please enter your preferable payment method:
+If you wish to pay with cash, please enter 1.
+If you wish to pay through online transfer, please enter 2.
+2
+
+The details of the receiver bank account are as below:
+Maybank
+MINI salon
+173678460739
+Please type on the reference with "Hair Donation"
+
+**********************************************************************************************************************************************
+**************************************************************SEAT ALLOCATION*****************************************************************
+**********************************************************************************************************************************************
+Your seat is available!
+Please move to seat 8
+
+Your seat is available!
+Please move to seat 7
+
+Your seat is available!
+Please move to seat 6
+
+Your seat is available!
+Please move to seat 5
+
+Your seat is available!
+Please move to seat 4
+
+Your seat is available!
+Please move to seat 3
+
+Your seat is available!
+Please move to seat 2
+
+Your seat is available!
+Please move to seat 1
+
+Sorry to inform you that the seats are currently full, please be patient and wait for a while!
+Thanks for your understanding and sorry for the inconvenience caused!
+
+==========================================CALCULATION===========================================================
+----------------------------------------------------------------------------------------------------------------
+How many female took part in this donation: 
+37
+There's a total of 37 female participant took part.
+The total fees collected : RM 370
+----------------------------------------------------------------------------------------------------------------
+How many male took part in this donation: 
+25
+There's a total of 25 male participant took part.
+The total fees collected : RM 175
+---------------------------------------------------------------------------------------------------------------
+How many kids took part in this donation: 
+11
+There's a total of 11 kids participant took part.
+The total fees collected : RM 55
+---------------------------------------------------------------------------------------------------------------
+There's a total of 73 participant.
+Extra donations from MINI salon : RM 365
+----------------------------------------------------------------------------------------------------------------
+The total donations collected is RM 965
+How many cash payment is collected?
+477
+How many online transfer payment is collected?
+488
+From the total amount of money,
+-RM 477 are paid by cash 
+-RM 488 are paid through online payment.
+=============================================END==============================================================
+
