@@ -1,0 +1,354 @@
+package Assignment;
+
+import java.util.Scanner;
+
+public class Assignment2 {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		
+		String username, choose, category, perfumeName;
+		int password, count = 0;
+		double totalperfume;
+		int quantity = 0;
+		double price = 0;
+		double pay, change;
+		double totalprice = 0;
+		char code;
+		
+		System.out.println("Log in");
+		System.out.print("Enter your username : ");
+		username = input.nextLine();
+		System.out.print("Enter your password : ");
+		password = input.nextInt();
+		
+		System.out.println("--------------------------------------------------------");
+		System.out.println("                  SUGARBOMB ONLINE SHOP                 ");
+		System.out.println("--------------------------------------------------------");
+		System.out.println("          CATEGORY                     ACCOUNT          ");  
+		System.out.println("--------------------------------------------------------");
+		choose = input.next();
+		
+		System.out.println();
+		System.out.println("Here are all the category of perfume in our shop: ");
+		System.out.println();
+		System.out.println("                     WOMEN EDP 30 ML");
+		System.out.println("                     WOMEN EDT 10 ML");
+		System.out.println("                      MEN EDP 30 ML");
+		System.out.println("                      MEN EDT 10 ML");
+		System.out.println("                         PARFUM");
+		System.out.println("                     SCARLET EDITION");
+		System.out.println("                     FRUITIES SERIES");
+	   
+		System.out.println();
+		
+		System.out.print("Enter the category that you want to see : ");
+		category = input.next();
+		
+		switch (category) {
+		case "womenedp":
+		case "WOMENEDP":
+			System.out.println("\t\t  WOMEN EDP | PRICE (RM 45.00)");
+			System.out.println("\r\n\t              Floral Blush     ");
+			System.out.println("\r\n\t             Floral Immortal   ");
+			System.out.println("\r\n\t               Fruity Rose     ");
+			System.out.println("\r\n\t              Fruity Selena    ");
+			System.out.println("\r\n\t              Fruity Sparkle   ");
+			System.out.println("\r\n\t             Sweet Bombshell   ");
+			System.out.println("\r\n\t               Sweet Coach     ");
+			System.out.println("\r\n\t              Sweet Fantasy    ");
+			System.out.println("\r\n\t                Vanillavie     ");
+			System.out.println("\r\n\t             Vanilla Poison    ");
+		break;
+				
+		case "womenedt":
+		case "WOMENEDT":
+			System.out.println("\t\t  WOMEN EDT | PRICE (RM 10.00)");
+			System.out.println("\r\n\t              Floral Blush     ");
+			System.out.println("\r\n\t             Floral Immortal   ");
+			System.out.println("\r\n\t               Fruity Rose     ");
+			System.out.println("\r\n\t              Fruity Selena    ");
+			System.out.println("\r\n\t              Fruity Sparkle   ");
+			System.out.println("\r\n\t             Sweet Bombshell   ");
+			System.out.println("\r\n\t               Sweet Coach     ");
+			System.out.println("\r\n\t              Sweet Fantasy    ");
+			System.out.println("\r\n\t                Vanillavie     ");
+			System.out.println("\r\n\t             Vanilla Poison    ");
+	    break; 
+		    	
+	    case "menedp":
+	    case "MENEDP":
+		    System.out.println("\t\t  MEN EDP | PRICE (RM 45.00)");
+			System.out.println("\r\n\t          Aromatic Adventurous  ");
+			System.out.println("\r\n\t             Aromatic Eros      ");
+			System.out.println("\r\n\t            Aromatic Legend     ");
+			System.out.println("\r\n\t              Citrus Code       ");
+			System.out.println("\r\n\t             Citrus Desire      ");
+			System.out.println("\r\n\t             Citrus Di Gio      ");
+			System.out.println("\r\n\t             Fruity Aventus     ");
+			System.out.println("\r\n\t             Spicy Million      ");
+			System.out.println("\r\n\t             Spicy Royalty      ");
+			System.out.println("\r\n\t                Spicy XS        ");
+	    break; 
+	   
+	    case "menedt":
+	    case "MENEDT":
+		    System.out.println("\t\t  MEN EDT | PRICE (RM 10.00)");
+			System.out.println("\r\n\t          Aromatic Adventurous  ");
+			System.out.println("\r\n\t             Aromatic Eros      ");
+			System.out.println("\r\n\t            Aromatic Legend     ");
+			System.out.println("\r\n\t              Citrus Code       ");
+			System.out.println("\r\n\t             Citrus Desire      ");
+			System.out.println("\r\n\t             Citrus Di Gio      ");
+			System.out.println("\r\n\t             Fruity Aventus     ");
+			System.out.println("\r\n\t             Spicy Million      ");
+			System.out.println("\r\n\t             Spicy Royalty      ");
+			System.out.println("\r\n\t                Spicy XS        ");
+	    break; 
+				
+			
+	    case "parfum":
+	    case "PARFUM":
+			System.out.println("\t\t  PARFUM | PRICE (RM 49.00)");
+			System.out.println("\r\n\t                Intense      ");
+			System.out.println("\r\n\t                 Blast       ");
+			System.out.println("\r\n\t                 Julia       ");
+			System.out.println("\r\n\t                Isabelle     ");
+			System.out.println("\r\n\t                 Elisa       ");
+			System.out.println("\r\n\t                Roselle      ");
+			System.out.println("\r\n\t                 Layla       ");
+	    break;
+		 
+	    case "scarletedition":
+	    case "SCARLETEDITION":
+			System.out.println("\t    SCARLET EDITION | PRICE (RM 45.00)");
+			System.out.println("\r\n\t                   Sakura       ");
+			System.out.println("\r\n\t                   Vaila        ");
+			System.out.println("\r\n\t                   Julia        ");
+			System.out.println("\r\n\t                    Rare        ");
+	    break;
+		
+	    case "fruitiesseries":
+	    case "FRUITIESSERIES":
+			System.out.println("           FRUITIES SERIES  |  PRICE (RM 29.00)"); 
+			System.out.println("\r\n\t                  Mango Swirl      ");
+			System.out.println("\r\n\t                   Baby Dew        ");
+			System.out.println("\r\n\t                Melon Moonlight    ");
+			System.out.println("\r\n\t                 Apple Smoothie    ");
+			System.out.println("\r\n\t                Strawberry Crush   ");
+	    break;  }  
+		
+		System.out.println();
+		
+		System.out.print("How many perfume that you want : ");
+        totalperfume = input.nextInt();
+        System.out.println();
+        
+        if (totalperfume <= 1) {
+        	System.out.print("Choose your perfume : ");
+			perfumeName = input.next();
+			System.out.println();
+	        
+			System.out.print("How many quantity that you want : ");
+	        quantity = input.nextInt();
+	        System.out.println();
+	        
+	        System.out.println("Add to cart : " +perfumeName);
+	        System.out.println();
+       
+	        System.out.print("Enter the price :                             RM ");
+	        price = input.nextDouble();
+	        System.out.println();
+	        
+	        totalprice = (price * quantity);
+	        
+	        System.out.println("Total Price                                   RM " + totalprice);
+			System.out.println();
+			
+			System.out.print("Pay the perfume :                             RM ");
+			pay = input.nextDouble();
+			System.out.println();
+			
+			change = (pay - totalprice);
+			System.out.println("Your change                                   RM " + change);
+			System.out.println();
+			
+		    System.out.println("YOU HAVE MADE THE PAYMENT FOR THIS PERFUME. THANK YOU AND COME AGAIN");
+        }
+        
+        else if (totalperfume > 1) {
+        	 do {
+        		System.out.println();
+        		
+        		System.out.print("Choose your perfume : ");
+				perfumeName = input.next();
+				System.out.println();
+				
+				System.out.print("How many quantity that you want for this perfume: ");
+		        quantity = input.nextInt();
+		        System.out.println();
+		    
+		        System.out.println("Add to cart : " +perfumeName);
+		        System.out.println();
+		        
+		        System.out.print("Enter the price :                         RM ");
+			    price = input.nextDouble();
+			    System.out.println();
+			    totalprice += price;
+			    count++;
+                
+		        System.out.println();
+		        System.out.print("Do you want to choose another perfume? Y/N = ");
+		        code = input.next().charAt(0);
+	         }while (code == 'y' || code == 'Y');
+			     
+        	     System.out.println();
+        	     
+        	     System.out.println("Total Price                                   RM " + totalprice);
+        	     System.out.println();
+        	     
+			     System.out.print("Pay the perfume :                             RM ");
+			     pay = input.nextDouble();
+				 System.out.println();
+					
+			     change = (pay - totalprice);
+				 System.out.println("Your change                                   RM " + change);
+		        
+				 System.out.println();
+			     System.out.println("YOU HAVE MADE THE PAYMENT FOR THIS PERFUME. THANK YOU AND COME AGAIN");
+		         }
+		 
+	}
+  }
+  
+  OUTPUT 
+  
+  IF (TOTALPERFUME <= 1)
+  
+  Log in
+Enter your username : AZYYATI
+Enter your password : 12345
+--------------------------------------------------------
+                  SUGARBOMB ONLINE SHOP                 
+--------------------------------------------------------
+          CATEGORY                     ACCOUNT          
+--------------------------------------------------------
+CATEGORY
+
+Here are all the category of perfume in our shop: 
+
+                     WOMEN EDP 30 ML
+                     WOMEN EDT 10 ML
+                      MEN EDP 30 ML
+                      MEN EDT 10 ML
+                         PARFUM
+                     SCARLET EDITION
+                     FRUITIES SERIES
+
+Enter the category that you want to see : WOMENEDP
+		  WOMEN EDP | PRICE (RM 45.00)
+
+	              Floral Blush     
+
+	             Floral Immortal   
+
+	               Fruity Rose     
+
+	              Fruity Selena    
+
+	              Fruity Sparkle   
+
+	             Sweet Bombshell   
+
+	               Sweet Coach     
+
+	              Sweet Fantasy    
+
+	                Vanillavie     
+
+	             Vanilla Poison    
+
+How many perfume that you want : 1
+
+Choose your perfume : FLORALBLUSH
+
+How many quantity that you want : 1
+
+Add to cart : FLORALBLUSH
+
+Enter the price :                             RM 45.00
+
+Total Price                                   RM 45.0
+
+Pay the perfume :                             RM 50.00
+
+Your change                                   RM 5.0
+
+IF (TOTALPERFUME > 1)
+				
+Log in
+Enter your username : AZYYATI
+Enter your password : 12345
+--------------------------------------------------------
+                  SUGARBOMB ONLINE SHOP                 
+--------------------------------------------------------
+          CATEGORY                     ACCOUNT          
+--------------------------------------------------------
+CATEGORY
+
+Here are all the category of perfume in our shop: 
+
+                     WOMEN EDP 30 ML
+                     WOMEN EDT 10 ML
+                      MEN EDP 30 ML
+                      MEN EDT 10 ML
+                         PARFUM
+                     SCARLET EDITION
+                     FRUITIES SERIES
+
+Enter the category that you want to see : SCARLETEDITION
+	    SCARLET EDITION | PRICE (RM 45.00)
+
+	                   Sakura       
+
+	                   Vaila        
+
+	                   Julia        
+
+	                    Rare        
+
+How many perfume that you want : 2
+
+
+Choose your perfume : SAKURA
+
+How many quantity that you want for this perfume: 1
+
+Add to cart : SAKURA
+
+Enter the price :                         RM 45.00
+
+
+Do you want to choose another perfume? Y/N = Y
+
+Choose your perfume : JULIA
+
+How many quantity that you want for this perfume: 1
+
+Add to cart : JULIA
+
+Enter the price :                         RM 45.00
+
+
+Do you want to choose another perfume? Y/N = N
+
+Total Price                                   RM 90.0
+
+Pay the perfume :                             RM 100.00
+
+Your change                                   RM 10.0
+
+YOU HAVE MADE THE PAYMENT FOR THIS PERFUME. THANK YOU AND COME AGAIN
